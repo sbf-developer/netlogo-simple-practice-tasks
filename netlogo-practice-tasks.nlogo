@@ -60,7 +60,13 @@ end
 ;; ============================================================
 
 to task-3
-end
+  clear-all
+  create-turtles 1 [ setxy 0 0 ]
+  ask turtles [
+  set size 3
+  set shape "square"
+  ]
+  end
 
 
 ;; ============================================================
@@ -70,7 +76,13 @@ end
 ;; ============================================================
 
 to task-4
-end
+  clear-all
+  create-turtles 1 [ setxy 0 0]
+  ask turtles [
+    set heading random 360
+    move fd 10 + 1
+  ]
+  end
 
 
 ;; ============================================================
