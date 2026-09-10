@@ -77,7 +77,7 @@ to task-3
 
 to task-4
   clear-all
-  create-turtles 1 [ setxy 0 0]
+  create-turtles 1 [ setxy 0 0 ]
   ask turtles [
     set heading random 360
     move fd 10 + 1
@@ -92,7 +92,15 @@ to task-4
 ;; ============================================================
 
 to task-5
+  clear-all
+  create-turtles 1 [ setxy 0 0 ]
+  ask turtles [
+    ifelse xcor > 0
+      [ set color green ]
+      [ set color orange ]
+  ]
 end
+
 
 
 ;; ============================================================
