@@ -28,6 +28,13 @@ end
 ;; ============================================================
 
 to task-1
+  clear-all
+  create-turtles 1 [ setxy 0 0 ]
+  ask turtles [
+  forward 20
+  rt 90
+  forward 20
+  ]
 end
 
 
@@ -38,8 +45,13 @@ end
 ;; ============================================================
 
 to task-2
+  clear-all
+  create-turtles 1 [ setxy 0 0 ]
+  ask turtles [
+  set color red
+  set color blue
+  ]
 end
-
 
 ;; ============================================================
 ;; TASK 3
